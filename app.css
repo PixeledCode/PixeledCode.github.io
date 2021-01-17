@@ -830,6 +830,10 @@ body div.darkmode {
   max-width: 100%;
 }
 
+.portfolio a {
+  position: relative;
+  z-index: 100;
+}
 
 @media screen and (min-width: 1600px) {
   .portfolio figure {
