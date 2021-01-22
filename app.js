@@ -17,7 +17,7 @@ let toggle2 = document.querySelector('.darkmode2');
 toggle.addEventListener('click', invert);
 toggle2.addEventListener('click', invert);
 
-// Darkmode NAvigation
+// Darkmode Navigation
 let project = document.querySelector('#projectSection');
 let about = document.querySelector('#aboutSection');
 let contact = document.querySelector('#contactSection');
@@ -208,3 +208,12 @@ gsap.from('.stagger5', {
   ease: 'Power1.easeNone',
   duration: 1
 });
+
+// Firefox creates overflow issue with filter on root, hide invert on firefox
+const isFirefox = typeof InstallTrigger !== 'undefined';
+if(isFirefox) {
+  const darkmode = document.querySelectorAll('.darkmode, .darkmode2, .arrow');
+  for (classes of darkmode)
+    classes.classList.add('mozillaHide');
+  document.querySelector('.resp-menu').classList.add('mozillaEnd');
+}
