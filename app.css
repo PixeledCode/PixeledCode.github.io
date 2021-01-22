@@ -620,20 +620,20 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 
 @media screen and (max-width: 1024px) {
-	.heading-title h1 {
+	/* .heading-title h1 {
 		font-size: 2rem;
-	}
+	} */
 
 	.heading-title h2 {
 		font-size: 1.5rem;
 	}
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
 	.heading-title h2 {
 		font-size: 1.1rem;
 	}
-}
+} */
 
 /* Invert the colors for dark mode */
 
