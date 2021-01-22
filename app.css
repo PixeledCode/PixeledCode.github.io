@@ -103,6 +103,22 @@ video {
   list-style: none;
 }
 
+:root {
+  font-size: 12px;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+  :root {
+    font-size: calc(12px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
 html,
 body {
   background: #222222;
@@ -146,7 +162,20 @@ body {
   background-color: cyan;
 }
 
+h1, h2, h3 {
+  font-family: 'Oswald';
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 p {
+  font-size: 1.5rem;
   line-height: 1.5em;
 }
 
@@ -156,7 +185,6 @@ button {
 }
 
 section h2 {
-  font-size: 2em;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -691,7 +719,6 @@ body div.darkmode {
 }
 
 .portfolio h3 {
-  font-size: 1.875em;
   text-align: center;
   font-weight: 500;
   margin-bottom: 1.5rem;
@@ -721,7 +748,7 @@ body div.darkmode {
 
 @media screen and (max-width: 640px) {
   .paragraph p {
-    font-size: 1.125em;
+    font-size: 1.1em;
     width: 100%;
     margin-left: 0;
   }
@@ -876,7 +903,6 @@ body div.darkmode {
 .about h3 {
   margin-top: 2rem;
   color: #222222;
-  font-size: 2em;
   margin-bottom: 1.5rem;
   font-weight: 400;
 }
@@ -1061,6 +1087,10 @@ body div.darkmode {
   margin: 0 auto 2rem auto;
   padding: 0 1rem;
   text-align: center;
+}
+
+.footer h3 {
+  font-size: 1rem;
 }
 
 .footer-name {
