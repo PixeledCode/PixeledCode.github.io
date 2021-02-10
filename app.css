@@ -857,6 +857,7 @@ body div.darkmode {
 
 .portfolio img {
 	max-width: 100%;
+	object-fit: contain;
 }
 
 .portfolio a {
