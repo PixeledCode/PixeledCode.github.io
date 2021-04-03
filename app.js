@@ -82,7 +82,7 @@ document.querySelector('#year').innerText = year.getFullYear();
 gsap.registerPlugin(ScrollTrigger)
 
 let tl = gsap.timeline();
-
+gsap.set('.startHide', {visibility: 'visible'})
 tl.from('.stagger2', {
     opacity: 0,
     y: -50,

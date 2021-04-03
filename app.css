@@ -131,8 +131,11 @@ body {
 	transition: filter 0.3s ease;
 }
 
-/* Scrollbar */
+.startHide {
+	visibility: hidden;
+}
 
+/* Scrollbar */
 ::-webkit-scrollbar {
 	width: 5px;
 }
