@@ -104,19 +104,19 @@ video {
 }
 
 :root {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
-  :root {
-    font-size: calc(12px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
-  }
+	:root {
+		font-size: calc(12px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+	}
 }
 
 @media (min-width: 800px) {
-  :root {
-    font-size: 17px;
-  }
+	:root {
+		font-size: 17px;
+	}
 }
 
 html,
@@ -165,16 +165,18 @@ body {
 	background-color: cyan;
 }
 
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3 {
+	font-family: 'Oswald', sans-serif;
 }
 
 h2 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 p {
@@ -188,8 +190,8 @@ button {
 }
 
 section h2 {
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+	margin-bottom: 1.5rem;
+	font-weight: 600;
 }
 
 /* Navbar */
@@ -229,13 +231,13 @@ section h2 {
 }
 
 .nav-links sup,
-.nav__list sup{
-	font-size: .7rem;
+.nav__list sup {
+	font-size: 0.7rem;
 }
 
 .nav-item a {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-							Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	display: inline-block;
@@ -329,7 +331,7 @@ section h2 {
 
 .nav:before,
 .nav:after {
-	content: "";
+	content: '';
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -395,7 +397,8 @@ section h2 {
 	-webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
 	transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
 	transition: opacity 0.2s ease, transform 0.3s ease;
-	transition: opacity 0.2s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+	transition: opacity 0.2s ease, transform 0.3s ease,
+		-webkit-transform 0.3s ease;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -418,7 +421,7 @@ section h2 {
 
 .nav__list-item a:after {
 	position: absolute;
-	content: "";
+	content: '';
 	top: 50%;
 	margin-top: -2px;
 	left: 50%;
@@ -603,7 +606,7 @@ body.nav-active .nav__list-item:nth-child(4) {
 }
 
 .clearfix:after {
-	content: "";
+	content: '';
 	display: table;
 	clear: both;
 }
@@ -730,9 +733,9 @@ body div.darkmode {
 }
 
 .portfolio h3 {
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
 }
 
 .paragraph p {
@@ -758,11 +761,11 @@ body div.darkmode {
 }
 
 @media screen and (max-width: 640px) {
-  .paragraph p {
-    font-size: 1.1em;
-    width: 100%;
-    margin-left: 0;
-  }
+	.paragraph p {
+		font-size: 1.1em;
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 @media screen and (min-width: 1600px) {
@@ -790,6 +793,7 @@ body div.darkmode {
 	color: white;
 	border: 1px solid white;
 	transition: filter 0.3s ease;
+	text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -916,10 +920,10 @@ body div.darkmode {
 }
 
 .about h3 {
-  margin-top: 2rem;
-  color: #222222;
-  margin-bottom: 1.5rem;
-  font-weight: 400;
+	margin-top: 2rem;
+	color: #222222;
+	margin-bottom: 1.5rem;
+	font-weight: 400;
 }
 
 .about p {
@@ -1080,8 +1084,8 @@ body div.darkmode {
 }
 
 .social-links a {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-								Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 	margin-top: 5px;
 	display: block;
 	color: #ddd;
@@ -1107,7 +1111,7 @@ body div.darkmode {
 }
 
 .footer h3 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 .footer-name {
@@ -1132,5 +1136,5 @@ body div.darkmode {
 }
 
 .mozillaEnd {
-  justify-content: end;
+	justify-content: end;
 }
